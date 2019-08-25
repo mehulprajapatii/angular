@@ -1,0 +1,31 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  template: `
+    <h2>Welcome to Angular App</h2>
+    <h2 *ngIf="displayName">
+    Ng-if Directive
+    </h2>
+
+    <div *ngIf="displayName; then thenblock else elseblock"></div>
+    <ng-template #thenblock>
+    <h1>This Block Render</h1>
+    </ng-template>
+    
+    <ng-template #elseblock>
+    <h1>Else Block Render</h1>
+    </ng-template>
+  `,
+  styles: []
+})
+export class TestComponent implements OnInit {
+
+
+  public name='Mehul';
+  displayName=true; 
+  constructor() { }
+
+  ngOnInit() {
+  }
+}
