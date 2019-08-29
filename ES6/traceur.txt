@@ -1,0 +1,7 @@
+//moduel loader
+
+Moduel Syntex - ES2015
+Module Loading - WIP
+
+
+npm install es6-module-loader traceur systemjs
